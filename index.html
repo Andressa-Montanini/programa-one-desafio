@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <main class="conteudo principal">
+        <header class="cabecalho">
+            <img src="./assets/image-a.png" alt="logo alura">
+        </header>
+
+        <div class="conteudo-entrada">
+            <div class="entrada">
+                <textarea id="texto-entrada" placeholder="Digite seu texto"></textarea> 
+
+                <p>
+                    <img id="simbolo" src="./assets/exclamacao.png" width="16px" height="16px">
+                    Apenas letras minúsculas e sem acento.
+                </p>
+            </div>
+
+        <div id="resultado">
+            <img src="./assets/image.png" alt="decodificando">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+        </div>
+        </div>
+
+        <div class="botao">
+            <div class="conteudo-botao">
+                <button onclick="criptografar()" class="botao-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="botao-descriptografar">Descriptografar</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p> Desenvolvido por Andressa Montanini</p>
+        <p>2024</p>
+    </footer>
+
+    <script src="./desafio.js" defer></script>
+</body>
+</html>
